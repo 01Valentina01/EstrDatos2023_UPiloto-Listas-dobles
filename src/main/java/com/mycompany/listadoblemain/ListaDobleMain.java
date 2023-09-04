@@ -41,7 +41,7 @@ public class ListaDobleMain {
             System.out.println("");
             System.out.println("Menu\n"
                     + "1.Insertar Primero\n"
-                    + "2.Añadir al principio\n"
+                    + "2.Insertar al final\n"
                     + "3.Eliminar primero\n"
                     + "4.Eliminar último\n"
                     + "5.Primer elemento de la lista\n"
@@ -50,14 +50,14 @@ public class ListaDobleMain {
                     + "8.Dato del nodo en la posicion indicada\n"
                     + "9.Dar nodo de la posicion indicada\n"
                     + "10.Insertar un nuevo nodo en la posicion indicada\n"
-                    + "11.Modificar14 el dato indicado en el nodo de la posicion indicada\n"
-                    + "11.Borrar elemento segun su posicion\n"
-                    + "12.Indicar si un dato existe en la lista\n"
-                    + "13.Mostrar contenido de la lista\n"
-                    + "14.Verificar si la lista esta vacia\n"
-                    + "15.Ordenar\n"
-                    + "16.Salir");
-            //Variable que elige el usuario        
+                    + "11.Modificar el dato indicado en el nodo de la posicion indicada\n"
+                    + "12.Borrar elemento segun su posicion\n"
+                    + "13.Indicar si un dato existe en la lista\n"
+                    + "14.Mostrar contenido de la lista\n"
+                    + "15.Verificar si la lista esta vacia\n"
+                    + "16.Ordenar\n"
+                    + "17.Salir");
+
             opcionmenu = in.nextInt();
             switch (opcionmenu) {
                 case 1:
@@ -96,6 +96,7 @@ public class ListaDobleMain {
                 case 7:
                     System.out.println("La cantidad de elementos son:");
                     System.out.println(Persona.cuantosElementos());
+                    System.out.println("En total tenemos " + Persona.cuantosElementos());
                     break;
 
                 case 8:
@@ -105,31 +106,37 @@ public class ListaDobleMain {
 
                     break;
                 case 10:
-
+                   
                     break;
                 case 11:
 
                     break;
                 case 12:
-
+             
                     break;
                 case 13:
 
                     break;
                 case 14:
+                    Persona.mostrar();
+                    break;
+                case 15:
                     if (Persona.estaVacia()) {
                         System.out.println("La lista esta vacia");
                     } else {
                         System.out.println("La lista no esta vacia");
                     }
+                    break;
                 case 16:
 
                     break;
-                case 15:
 
+                case 17:
+                    System.out.println("Gracias por usar nuestro sistema");
+                    System.exit(0);
                     break;
                 default:
-                    break;
+                    System.out.println("ERROR. Opcion no valida");
             }
         }
 
