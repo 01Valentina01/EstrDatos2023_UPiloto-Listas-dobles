@@ -104,7 +104,7 @@ public class ListaDobleMain {
                     break;
                 case 9:
 
-                    break;
+                    break;                      
                 case 10:
                    
                     break;
@@ -128,7 +128,6 @@ public class ListaDobleMain {
                     }
                     break;
                 case 16:
-
                     break;
 
                 case 17:
